@@ -12,7 +12,6 @@ from pptx.enum.shapes import MSO_SHAPE_TYPE
 import random
 import os.path
 
-
 class color:   
    BOLD = '\033[1m'
    END = '\033[0m'
@@ -29,7 +28,6 @@ searchText = 'Write Text Here'
  
 
 
-
 ##Read the text
 if scan_text.lower() == 'y':  #forcing lower case just in case
     textContent = []
@@ -41,7 +39,9 @@ if scan_text.lower() == 'y':  #forcing lower case just in case
             for paragraph in shape.text_frame.paragraphs:
                 for run in paragraph.runs:
                     textContent.append(run.text)   
-    
+
+                  
+                  
 ###Search the text for strings or phrases
     textContent_lwr = []     #find all matches and place them in a list
     for x in textContent:
