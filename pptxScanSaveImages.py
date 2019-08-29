@@ -2,7 +2,7 @@
 
 """
 
-@author: kevic
+@author: kpericak
 
 """
 
